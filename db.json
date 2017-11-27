@@ -1,0 +1,85 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Ashwin: quickest bowler to 300 wickets in Test history",
+      "about": "The new era cricket",
+      "content": "In only his 54th match, R Ashwin became the quickest bowler to take 300 wickets in Test history. His 4 for 63 in the second innings in Nagpur not only helped India wrap up their biggest win in the format, and but also meant he took over from Dennis Lillee (56 Tests) as the new record holder. Ashwin also beat Muttiah Muralitharan, who had been the fastest spinner to 300 wickets, by as many as four Tests.",
+      "category": "Sports",
+      "author": 2
+    },
+    {
+      "id": 2,
+      "title": "Gabba Test shows why pitches must favour bowlers more",
+      "about": "The new era tennis",
+      "content": "One of the big changes in Test cricket in the era of media saturation has been the amount of talking and predicting done by the competitors in the lead-up to a series. Never is this more evident than in an Ashes series, and one of the big talking points leading into the 2017-18 version was discussion surrounding the venue. The Gabbatoir, as it is now commonly referred to by locals in the hope that this will lead to the slaughtering of England, was the focal point of much of what really amounted to trash talking.",
+      "category": "Sports",
+      "author": 2
+    },
+    {
+      "id": 3,
+      "title": "Bootstrap shadows",
+      "about": "Slow language but good",
+      "content": "Bootstrap shadow is an effect used in web elements which provides important visual cues about objects' depth and directional movement.They are the only visual cue indicating the amount of separation between surfaces. An object’s elevation determines the appearance of its shadow.",
+      "category": "Education",
+      "author": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Prerit",
+      "username": "user1",
+      "password": "user1",
+      "favouritePosts": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sachin",
+      "username": "user2",
+      "password": "user2",
+      "favouritePosts": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Ludo",
+      "username": "aloo",
+      "password": "qwert",
+      "favouritePosts": []
+    },
+    {
+      "id": 4,
+      "name": "pkp",
+      "username": "user5",
+      "password": "123",
+      "favouritePosts": []
+    },
+    {
+      "id": 5,
+      "name": "wreuwur",
+      "username": "user11",
+      "password": "12345",
+      "favouritePosts": []
+    },
+    {
+      "id": 6,
+      "name": "dhsdhj",
+      "username": "user12",
+      "password": "12345",
+      "favouritePosts": []
+    },
+    {
+      "id": "user7",
+      "name": "santosh",
+      "username": "santosh",
+      "password": "santosh",
+      "favouritePosts": []
+    }
+  ]
+}

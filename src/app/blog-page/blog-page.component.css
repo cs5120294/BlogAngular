@@ -1,0 +1,32 @@
+.heading{
+  background-color: deepskyblue;
+  height: 60px;
+}
+
+.head{
+  vertical-align: middle;
+  /*padding-left: 20px;*/
+  line-height: 60px;
+}
+
+.uidBox{
+  position: relative;
+  margin: 150px auto 0;
+  width: 300px;
+}
+
+.loginbtn{
+  background-color: deepskyblue;
+  color: black;
+  border: 2px solid midnightblue;
+  border-radius:8px;
+  padding:6px 16px;
+  margin-right:16px;
+  margin-left:16px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.input{
+  font-size: 15px;
+}
