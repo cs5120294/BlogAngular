@@ -1,12 +1,12 @@
-<div class="container" style="margin-top:50px">
+<div *ngIf="blogPost!=null" class="container" style="margin-top:50px">
   <div class="col-md-8 col-md-offset-2 shadow">
     <h2>{{blogPost.title}}</h2>
     <div class="row">
       <div class="col-md-10" style="margin-bottom:10px">
         <p>{{blogPost.content}}</p>
-        <button (click)="markFavourite(blogPost.id)" style="background: transparent; border: hidden; font-size: large" data-toggle="tooltip" data-placement="top" title="Mark as favourite"><span [style.color]="currentUser.favouritePosts.includes(blogPost.id) ? 'red':'null'" class="glyphicon glyphicon-heart-empty"></span></button>
-        <button *ngIf="blogPost.author==currentUser.id" style="background: transparent; border: hidden; font-size: large" data-toggle="tooltip" data-placement="top" title="Edit post"><span class="glyphicon glyphicon-edit"></span></button>
-        <!--<button style="background: transparent; border: hidden; font-size: large"><span class="glyphicon glyphicon-plus"></span></button>-->
+        <button (click)="markFavourite(blogPost.id)" style="background: transparent; border: hidden; font-size: large; outline: none" data-toggle="tooltip" data-placement="top" title="Mark as favourite"><span [style.color]="currentUser['favouritePosts'].includes(blogPost.id) ? 'red':'black'" class="glyphicon glyphicon-heart"></span></button>
+        <button *ngIf="blogPost.author==currentUser['id']" style="background: transparent; border: hidden; font-size: large; outline: none" data-toggle="tooltip" data-placement="top" title="Edit post"><span class="glyphicon glyphicon-edit"></span></button>
+        <button (click)="deletePost(blogPost.id)" *ngIf="blogPost.author==currentUser['id']" style="background: transparent; border: hidden; font-size: large; outline: none" data-toggle="tooltip" data-placement="top" title="Delete post"><span class="glyphicon glyphicon-trash"></span></button>
         <div class="pull-right row">
           <p class="author-box-title">
             Written By:

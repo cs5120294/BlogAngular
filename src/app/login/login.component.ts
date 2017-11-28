@@ -32,7 +32,11 @@ export class LoginComponent implements OnInit {
 
   signup(name, username, password, confirmPassword) {
     let obj = this.users.find(o => o['username'] === username);
+    if (name === '' || username === '' || password === '' || confirmPassword === '') {
+      return false;
+    }
     if (obj != null) {
+      this.confirmPasswordMatch = true;
       this.usernameMatch = true;
     } else {
       this.usernameMatch = false;
@@ -41,7 +45,7 @@ export class LoginComponent implements OnInit {
       } else {
         this.confirmPasswordMatch = true;
         let user = {
-          id: 'user' + (this.users.length + 1),
+          id: (this.users.length + 1),
           name: name,
           username: username,
           password: password,
